@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nirvana System by SummerMute</title>
+    <!-- Link to Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Basic CSS for styling -->
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            background-color: #4A90E2;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header img {
+            max-width: 150px;
+            margin-bottom: 10px;
+        }
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: #4A90E2;
+            border-bottom: 2px solid #4A90E2;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            overflow-x: auto;
+        }
+        footer {
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px 0;
+            border-top: 1px solid #ddd;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #4A90E2;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background-color: #357ABD;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    <img src="logo.png" alt="Summermute Logo">
+    <h1>Nirvana System</h1>
+    <p>Powered by SummerMute</p>
+</header>
+
+<!-- Navigation Bar -->
+<!--<nav>-->
+<!--    <a href="#home">Home</a>-->
+<!--    <a href="#overview">Overview</a>-->
+<!--    <a href="#features">Features</a>-->
+<!--    <a href="#installation">Installation</a>-->
+<!--    <a href="#license">License</a>-->
+<!--    <a href="#about">About</a>-->
+<!--    <a href="#contact">Contact</a>-->
+<!--</nav>-->
+
+<!-- Main Content -->
+<div class="container">
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Welcome to Nirvana System</h2>
+        <p>The <strong>Nirvana System</strong> is a versatile communication framework designed to facilitate structured interactions among multiple agents. Developed by <strong>SummerMute</strong>, it supports both Hierarchical and Joint communication modes, enabling efficient collaboration and task management within teams. Leveraging AI Agents for natural language processing, the system ensures dynamic and meaningful exchanges among participants.</p>
+    </section>
+
+    <!-- Overview Section -->
+    <section id="overview">
+        <h2>Overview</h2>
+        <p>The Nirvana System is a flexible communication framework that supports both Hierarchical and Joint communication modes. By utilizing AI Agents for natural language processing, it ensures dynamic and meaningful interactions among team members, promoting effective collaboration and task management.</p>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <h2>Features</h2>
+        <ul>
+            <li><strong>Hierarchical Communication Mode</strong>: Designate a leader to manage and coordinate interactions among team members.</li>
+            <li><strong>Joint Communication Mode (WIP)</strong>: Foster equal participation and collaboration among all agents without a designated leader.</li>
+            <li><strong>Dynamic Logging</strong>: Automatically generates log files with system type and timestamp for enhanced traceability.</li>
+            <li><strong>Comprehensive Reporting</strong>: Creates detailed Markdown reports capturing all communication cycles and interactions.</li>
+            <li><strong>TypeScript Integration</strong>: Ensures type safety and maintainability with well-defined interfaces and modular code structure.</li>
+            <li><strong>Environment Configuration</strong>: Easily configurable through .env and JSON configuration files.</li>
+            <li><strong>Scalable Architecture</strong>: Designed to handle increasing numbers of agents and complex communication flows.</li>
+        </ul>
+        <h3>Supported AI Agent Frameworks</h3>
+        <ul>
+            <li><strong>ELIZA</strong></li>
+        </ul>
+    </section>
+
+    <!-- Installation Section -->
+    <section id="installation">
+        <h2>Installation Guide</h2>
+        <h3>Prerequisites</h3>
+        <p>Before setting up the Nirvana System, ensure you have the following installed on your machine:</p>
+        <ul>
+            <li><strong>Node.js</strong>: v23.3.0 (Recommended)</li>
+            <li><strong>pnpm</strong>: v9.15.1 (Recommended)</li>
+        </ul>
+
+        <h3>Installation Steps</h3>
+        <ol>
+            <li><strong>Clone the Repository</strong>
+                <pre><code>git clone git@github.com/SummerMute-t/nirvana.git
+cd nirvana
+</code></pre>
+            </li>
+            <li><strong>Install Dependencies Using pnpm</strong>
+                <pre><code>pnpm install
+</code></pre>
+            </li>
+        </ol>
+    </section>
+
+    <!-- Configuration Section -->
+    <section id="configuration">
+        <h2>Configuration</h2>
+        <h3>Environment Variables</h3>
+        <p>Copy <code>.env.sample</code> to create a <code>.env</code> file in the root directory of the project.</p>
+
+        <h4>.env</h4>
+        <p><strong>Base URL for the Agent (Eliza Framework)</strong></p>
+        <pre><code>ELIZA_BASE_URL=http://localhost:3000
+</code></pre>
+        <p><strong>Maximum number of communication cycles</strong></p>
+        <pre><code>MAX_COMMUNICATION_CYCLES=10
+</code></pre>
+
+        <h3>Agents Configuration</h3>
+        <p>Define your agents and their roles in JSON configuration files. Two separate configurations are provided for Hierarchical and Joint modes. Refer to the sample configuration files in the <code>agents/</code> directory for reference.</p>
+    </section>
+
+    <!-- Run Section -->
+    <section id="run">
+        <h2>Run Nirvana System</h2>
+        <p>To start the Nirvana System in Hierarchical Mode, execute the following command:</p>
+        <pre><code>pnpm start --config agents/filename.json
+</code></pre>
+    </section>
+
+    <!-- License Section -->
+    <section id="license">
+        <h2>License</h2>
+        <p>This project is licensed under the <strong>MIT License</strong>.</p>
+    </section>
+
+    <!-- About SummerMute Section -->
+    <section id="about">
+        <h2>About SummerMute</h2>
+        <p><strong>SummerMute</strong> is a leading technology company providing innovative software solutions. Through the Nirvana System, we enable efficient communication and collaboration among multiple agents, leveraging the latest AI technologies to deliver the best user experience.</p>
+        <p><strong>Developer</strong>: Blair Lee</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or feedback, feel free to reach out to us at <a href="mailto:summermuteai@gmail.com">summermuteai@gmail.com</a>.</p>
+    </section>
+
+    <!-- Additional Resources Section -->
+    <section id="resources">
+        <h2>Additional Resources</h2>
+        <ul>
+            <li><a href="https://github.com/SummerMute-t/nirvana" target="_blank">GitHub Repository</a></li>
+            <li><a href="https://raw.githubusercontent.com/SummerMute-t/SummerMute-t/refs/heads/main/Whitepaper-SummerMute.pdf" target="_blank">Documentation</a></li>
+        </ul>
+    </section>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 SummerMute. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
